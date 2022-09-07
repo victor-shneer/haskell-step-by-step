@@ -25,6 +25,8 @@ source-repository head
 
 library
   exposed-modules:
+      Chapter_1.NumberOfCharsInAFile
+      Chapter_1.NumberOfWordsInAFile
       Lib
       Phoityne.Example.Math
   other-modules:
@@ -52,6 +54,8 @@ test-suite first-touch-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Chapter_1.NumberOfCharsSpec
+      Chapter_1.NumberOfWordsSpec
       Phoityne.Example.MathSpec
       SpecHelper
       Paths_first_touch
