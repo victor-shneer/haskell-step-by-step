@@ -2,11 +2,11 @@
 
 ## Story
 
-I started again with Real World Haskell book 
-And now I want to do it in a right way
-Here you can find a footprint of my learning journey
+I started again with Real World Haskell book  
+And now I want to do it in a right way  
+Here you can find a footprint of my learning journey  
   
-Tel Aviv
+Tel Aviv  
 7 Sep 2022
 
 
@@ -16,9 +16,9 @@ https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the
 ## ghci tricks
 :set prompt "ghci> "
 
-:set +t   -- to print more type information for each entry
-:unset +t
-:type 'a' -- to print type information for a value
+:set +t   -- to print more type information for each entry  
+:unset +t  
+:type 'a' -- to print type information for a value  
 
 :m +Data.Ratio -- to add rational numbers operations
 
