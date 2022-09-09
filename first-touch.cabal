@@ -27,6 +27,7 @@ library
   exposed-modules:
       Chapter_1.NumberOfCharsInAFile
       Chapter_1.NumberOfWordsInAFile
+      Chapter_2.LastButOne
       Lib
       Phoityne.Example.Math
   other-modules:
@@ -56,6 +57,7 @@ test-suite first-touch-test
   other-modules:
       Chapter_1.NumberOfCharsSpec
       Chapter_1.NumberOfWordsSpec
+      Chapter_2.LastButOneSpec
       Phoityne.Example.MathSpec
       SpecHelper
       Paths_first_touch
