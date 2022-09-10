@@ -1,5 +1,8 @@
 # Learn Haskell step by step
 
+## TODOs
+add README for each chapter
+
 ## enviroment set-up
 https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
 
@@ -16,6 +19,8 @@ https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the
 :cd /tmp -- to change directories inside ghci   
 
 :show bindings
+
+:info -- gets ghci to tell us everything it knows about a name
 
 ## run programms with input
 runghc src/Chapter_1/SimpleProgram < src/Chapter_1/quux.txt

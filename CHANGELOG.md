@@ -1,4 +1,4 @@
-# Changelog for `first-touch`
+# Changelog for `haskell-step-by-step`
 
 All notable changes to this project will be documented in this file.
 

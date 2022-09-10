@@ -1,0 +1,78 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-step-by-step
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/victor-shneer/haskell-step-by-step#readme>
+homepage:       https://github.com/victor-shneer/haskell-step-by-step#readme
+bug-reports:    https://github.com/victor-shneer/haskell-step-by-step/issues
+author:         victor-shneer
+maintainer:     victor.shneer@gmail.com
+copyright:      2022 victor-shneer
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/victor-shneer/haskell-step-by-step
+
+library
+  exposed-modules:
+      Chapter_1.NumberOfCharsInAFile
+      Chapter_1.NumberOfWordsInAFile
+      Chapter_2.LastButOne
+      Chapter_3.AlgebraicDataType
+      Chapter_3.AlgebraicVector
+      Chapter_3.BookStore
+      Chapter_3.Exercises
+      Chapter_3.ListADT
+      Chapter_3.MySecond
+      Chapter_3.NiceDrop
+      Lib
+      Phoityne.Example.Math
+  other-modules:
+      Paths_haskell_step_by_step
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-missing-export-lists -Wno-unused-top-binds
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable haskell-step-by-step-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_step_by_step
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-missing-export-lists -Wno-unused-top-binds -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , haskell-step-by-step
+  default-language: Haskell2010
+
+test-suite haskell-step-by-step-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Chapter_1.NumberOfCharsSpec
+      Chapter_1.NumberOfWordsSpec
+      Chapter_2.LastButOneSpec
+      Phoityne.Example.MathSpec
+      SpecHelper
+      Paths_haskell_step_by_step
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-missing-export-lists -Wno-unused-top-binds -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , haskell-step-by-step
+    , hspec
+  default-language: Haskell2010
