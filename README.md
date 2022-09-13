@@ -1,8 +1,5 @@
 # Learn Haskell step by step
 
-## TODOs
-add README for each chapter
-
 ## enviroment set-up
 https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
 
@@ -30,15 +27,8 @@ runghc src/Chapter_1/SimpleProgram < src/Chapter_1/quux.txt
 I started again with Real World Haskell book  
 And now I want to do it in a right way  
 Here you can find a footprint of my learning journey  
-  
-Tel Aviv  
-7 Sep 2022 | ~ 18:00
-
-
 Not sure that it can be usefull to anybody  
 Except me :)  
-Just have a look at this and do the same  
-It really helps to get into the language 
 
-Train Tel Aviv - Haifa
-7 Sep 2022 | 22:16  
+## TODOs
+add README for each chapter
