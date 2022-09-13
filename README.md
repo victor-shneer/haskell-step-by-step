@@ -4,6 +4,7 @@
 https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
 
 ## ghci commands
+```
 :set prompt "ghci> "
 
 :set +t   -- to print more type information for each entry    
@@ -19,9 +20,14 @@ https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the
 
 :info -- gets ghci to tell us everything it knows about a name
 
+-- compile haskell source to an executable named InteractWith
+-- we need -main-is because by default shc assume that main is located in Main modul. This is not our case
+ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
+```
 ## run programms with input
+```
 runghc src/Chapter_1/SimpleProgram < src/Chapter_1/quux.txt
-
+```
 ## Story
 
 I started again with Real World Haskell book  

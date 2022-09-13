@@ -35,6 +35,7 @@ library
       Chapter_3.ListADT
       Chapter_3.MySecond
       Chapter_3.NiceDrop
+      Chapter_4.FixLines
       Lib
       Phoityne.Example.Math
   other-modules:

@@ -1,0 +1,4 @@
+hellow my Haskell 
+dear friend
+text with endlines
+and stuff
