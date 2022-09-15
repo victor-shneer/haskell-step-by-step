@@ -1,4 +1,4 @@
-hellow my Haskell 
-dear friend
+hellow my Haskell  
+dear friend 000000
 text with endlines
-and stuff
+and stuff 00000000

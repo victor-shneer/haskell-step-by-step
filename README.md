@@ -1,7 +1,9 @@
 # Learn Haskell step by step
 
 ## enviroment set-up
+> be careful here friend. Article is a little bit outdated. But it is good and in 2022 I still could archive the same results with some deviations in the instalation process. Don't afraid to read error messages :)
 https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
+
 
 ## ghci commands
 ```
@@ -20,21 +22,21 @@ https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the
 
 :info -- gets ghci to tell us everything it knows about a name
 
--- compile haskell source to an executable named InteractWith
--- we need -main-is because by default shc assume that main is located in Main modul. This is not our case
-ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
 ```
-## run programms with input
+## run programs with input
 ```
 runghc src/Chapter_1/SimpleProgram < src/Chapter_1/quux.txt
 ```
-## Story
+> compile haskell source to an executable named InteractWith
+> we need -main-is because by default shc assume that main is located in Main modul. This is not our case
+ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
 
-I started again with Real World Haskell book  
-And now I want to do it in a right way  
-Here you can find a footprint of my learning journey  
-Not sure that it can be usefull to anybody  
-Except me :)  
 
 ## TODOs
-add README for each chapter
+- you don't need readme for each chapter but good comment sections
+- test should not be module? https://stackoverflow.com/questions/58944736/hspec-defined-tests-invoked-with-stack-throw-an-error-when-test-file-is-defined
+- maybe I should not blindly copy paste from the book, considering copyright
+- rename modules. From Chapter to related topic
+- you can rethink the whole repo as Haskell+f programming learning hub. Not only Real World Haskel
+- put ghci commands in the separate directory and rething this README as a Table of Contents
+- add daml directory. you can start with DA.VALIDATION

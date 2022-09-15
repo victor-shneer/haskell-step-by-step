@@ -35,7 +35,13 @@ library
       Chapter_3.ListADT
       Chapter_3.MySecond
       Chapter_3.NiceDrop
+      Chapter_4.Adler32Fold
       Chapter_4.FixLines
+      Chapter_4.Fold
+      Chapter_4.FoldExercises
+      Chapter_4.ListFunctionsExercises
+      Chapter_4.PrintFirstWordExercise
+      Chapter_4.TransposeTextExercise
       Lib
       Phoityne.Example.Math
   other-modules:
