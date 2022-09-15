@@ -1,7 +1,7 @@
 # Learn Haskell step by step
 
 ## Enviroment set-up
-Article is a little bit outdated. In 2022 I still could archive the same results with some deviations of the instalation process. Tip: don't afraid to read error messages :)  
+Article is a little bit outdated. In 2022 I still could archive the same results with some deviations of the installation process. Tip: don't afraid to read error messages :)  
 https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
 
 
@@ -15,7 +15,7 @@ https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the
 
 :m +Data.Ratio -- to add rational numbers operations
 
-:load src/Chapter_2/add.hs -- to source files  
+:load src/Chapter_2/add.hs -- to add source files  
 :cd /tmp -- to change directories inside ghci   
 
 :show bindings
