@@ -1,11 +1,11 @@
 # Learn Haskell step by step
 
-## enviroment set-up
-> Article is a little bit outdated. In 2022 I still could archive the same results with some deviations of the instalation process. Tip: don't afraid to read error messages :)  
+## Enviroment set-up
+Article is a little bit outdated. In 2022 I still could archive the same results with some deviations of the instalation process. Tip: don't afraid to read error messages :)  
 https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
 
 
-## inside ghci
+## Inside ghci
 ```
 :set prompt "ghci> "
 
@@ -25,12 +25,11 @@ https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the
 ```
 
 
-## ghc commands
+## Compiler commands
 ```
 runghc src/Chapter_1/SimpleProgram < src/Chapter_1/quux.txt
 ```
-> compile haskell source to an executable named InteractWith
-> we need -main-is because by default shc assume that main is located in Main modul. This is not our case  
+Compile haskell source to an executable named InteractWith. We need -main-is because by default ghc assume that main is located in Main module. This is not our case.  
 ```
 ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
 ```
