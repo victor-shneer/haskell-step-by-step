@@ -1,9 +1,7 @@
 # Learn Haskell step by step
 
 ## Enviroment set-up
-Article is a little bit outdated. In 2022 I still could archive the same results with some deviations of the installation process. Tip: don't afraid to read error messages :)  
-https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf
-
+Article is a little bit outdated. In 2022 I still could archive the same results with some deviations of the installation process. Tip: don't afraid to read error messages :) [Setting Up Haskell In Vs Code With Stack And The IDE Engine](https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-with-stack-and-the-ide-engine-81d49eda3ecf)  
 
 ## Inside ghci
 ```
@@ -36,10 +34,10 @@ ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
 
 
 ## TODOs
-- you don't need readme for each chapter but good comment sections
-- test should not be module? https://stackoverflow.com/questions/58944736/hspec-defined-tests-invoked-with-stack-throw-an-error-when-test-file-is-defined
-- maybe I should not blindly copy paste from the book, considering copyright
-- rename modules. From Chapter to related topic
-- you can rethink the whole repo as Haskell+f programming learning hub. Not only Real World Haskel
-- put ghci commands in the separate directory and rething this README as a Table of Contents
-- add daml directory. you can start with DA.VALIDATION
+- [ ] you don't need readme for each chapter but good comment sections
+- [ ] test should not be module? [Link](https://stackoverflow.com/questions/58944736/hspec-defined-tests-invoked-with-stack-throw-an-error-when-test-file-is-defined)
+- [ ] maybe I should not blindly copy paste from the book, considering copyright
+- [ ] rename modules. From Chapter to related topic
+- [ ] you can rethink the whole repo as Haskell+f programming learning hub. Not only Real World Haskel
+- [ ] put ghci commands in the separate directory and rething this README as a Table of Contents
+- [ ] add daml directory. you can start with DA.VALIDATION
