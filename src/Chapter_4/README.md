@@ -38,3 +38,7 @@ ghci> :module +Data.Char
 ghci> break isUpper "isUpper" 
 ("is","Upper")
 ```
+
+
+## TODOs
+- [ ] Continue with other Real World Haskell excersises (p.98)
