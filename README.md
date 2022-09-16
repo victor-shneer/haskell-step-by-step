@@ -41,3 +41,4 @@ ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
 - [ ] you can rethink the whole repo as Haskell+f programming learning hub. Not only Real World Haskel
 - [ ] put ghci commands in the separate directory and rething this README as a Table of Contents
 - [ ] add daml directory. you can start with DA.VALIDATION
+- [ ] add circle ci with tests and protect main

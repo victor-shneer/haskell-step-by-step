@@ -39,6 +39,33 @@ ghci> break isUpper "isUpper"
 ("is","Upper")
 ```
 
+### tails
+Haskell’s tails function, in the Data.List module, generalizes the tail function we introduced earlier. Instead of returning one “tail” of a list, it returns all of them:
+```
+ghci> :m +Data.List  
+ghci> tail "foobar"   
+"oobar"  
+ghci> tail (tail "foobar")  
+"obar"
+ghci> tails "foobar"  
+["foobar","oobar","obar","bar","ar","r",""]
+```
+
+### seq
+
+It bypasses Haskell’s usual nonstrict evaluation through the use of a special function named seq:
+```haskell
+foldl' _ zero [] = zero 
+foldl' step zero (x:xs) =
+  let new = step zero x
+  in new `seq` foldl' step new xs
+```  
+This seq function has a peculiar type, hinting that it is not playing by the usual rules: 
+```
+ghci> :type seq
+seq :: a -> t -> t
+```
+It operates as follows: when a seq expression is evaluated, it forces its first argument to be evaluated, and then returns its second argument.
 
 ## TODOs
 - [ ] Continue with other Real World Haskell excersises (p.98)

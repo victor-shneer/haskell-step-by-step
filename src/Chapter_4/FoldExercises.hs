@@ -6,25 +6,25 @@ import Data.Char (digitToInt)
 
 {-  (Real World Haskell) write string to int function using fold #1
 
-Your function should behave as follows:
-ghci> asInt_fold "101" 
-101
-ghci> asInt_fold "-31337" 
--31337
-ghci> asInt_fold "1798" 
-1798
+  Your function should behave as follows:
+  ghci> asInt_fold "101" 
+  101
+  ghci> asInt_fold "-31337" 
+  -31337
+  ghci> asInt_fold "1798" 
+  1798
 
-Extend your function to handle the following kinds of exceptional conditions by calling error:
-ghci> asInt_fold ""
-0
-ghci> asInt_fold "-" 
-0
-ghci> asInt_fold "-3"
--3
-ghci> asInt_fold "2.7"
-*** Exception: Char.digitToInt: not a digit '.' 
-ghci> asInt_fold "314159265358979323846" 
-564616105916946374
+  Extend your function to handle the following kinds of exceptional conditions by calling error:
+  ghci> asInt_fold ""
+  0
+  ghci> asInt_fold "-" 
+  0
+  ghci> asInt_fold "-3"
+  -3
+  ghci> asInt_fold "2.7"
+  *** Exception: Char.digitToInt: not a digit '.' 
+  ghci> asInt_fold "314159265358979323846" 
+  564616105916946374
 
 -}
 
@@ -41,12 +41,12 @@ asIntFold (x:xs)                 = if x == '-' then validateResult (negate $ par
                                         else error "propably the string represents the nubmer that is too big for me" 
 {-  (Real World Haskell) write string to int function using fold #2
 
-The asInt_fold function uses error, so its callers cannot handle errors. Rewrite the function to fix this problem:
--- file: ch04/ch04.exercises.hs type ErrorMessage = String asInt_either :: String -> Ei
-ghci> asInt_either "33" 
-Right 33
-ghci> asInt_either "foo" 
-Left "non-digit 'o'"
+  The asInt_fold function uses error, so its callers cannot handle errors. Rewrite the function to fix this problem:
+  -- file: ch04/ch04.exercises.hs type ErrorMessage = String asInt_either :: String -> Ei
+  ghci> asInt_either "33" 
+  Right 33
+  ghci> asInt_either "foo" 
+  Left "non-digit 'o'"
 
 -}
 asIntEither :: String -> Either String Int
@@ -57,7 +57,7 @@ asIntEither inputStr
 asIntEither inputStr = case snd result of
                           Just errorM -> Left errorM
                           _ -> if show (fst result) /= inputStr
-                                    then Left "Smth went wrong. Propably your integer is too big"
+                                    then Left "Smth went wrong. Propably integer is too big"
                                     else Right $ fst result
                        where 
                           result = foldl' processChar (0, Nothing) inputStr
@@ -69,9 +69,9 @@ asIntEither inputStr = case snd result of
                                 else (0, Just $ "Non digit " ++ [ch])
 
 {-
-The Prelude function concat concatenates a list of lists into a single list and has the following type:
-concat :: [[a]] -> [a]
-Write your own definition of concat using foldr.
+  The Prelude function concat concatenates a list of lists into a single list and has the following type:
+  concat :: [[a]] -> [a]
+  Write your own definition of concat using foldr.
 -}
 
 foldrConcat :: [[a]] -> [a]
