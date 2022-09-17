@@ -22,7 +22,6 @@ validateDate candidate =
   validateDate = Validation . maybe (Left ["Not a date."]) Right . readMaybe
 -}
 
-
 validateQuantity :: Double -> Validation [String] Int
 validateQuantity candidate =
   if isInt candidate && candidate > 0
@@ -30,13 +29,11 @@ validateQuantity candidate =
     else Validation $ Left ["Not a positive integer."]
   where isInt x = x == fromInteger (round x)
 
-
 validateEmail :: String -> Validation [String] String
 validateEmail candidate =
   if '@' `elem` candidate
     then Validation $ Right candidate
     else Validation $ Left ["Not an email address."]
-
 
 validateReservation :: ReservationJson -> Validation [String] Reservation
 validateReservation candidate =
