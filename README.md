@@ -40,5 +40,5 @@ ghc -main-is Chapter_4.InteractWith  src/Chapter_4/InteractWith.hs
 - [ ] rename modules. From Chapter to related topic
 - [x] you can rethink the whole repo as Haskell+f programming learning hub. Not only Real World Haskel
 - [ ] put ghci commands in the separate directory and rething this README as a Table of Contents
-- [x] ~~add daml directory. you can start with DA.VALIDATION~~ move the idea to another [repo]https://github.com/victor-shneer/daml-studies
+- [x] ~~add daml directory. you can start with DA.VALIDATION~~ move the idea to another [repo](https://github.com/victor-shneer/daml-studies)
 - [ ] add circle ci with tests and protect main
