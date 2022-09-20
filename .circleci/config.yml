@@ -3,15 +3,15 @@
 version: 2.1
 
 jobs:
-  build_project:
+  stack_build_and_test:
     docker:
       - image: cimg/base:stable
     steps:
       - checkout
-      - restore-cache:
+      - restore_cache:
           keys:
             - stack-{{ checksum “stack.yaml” }}
-      - restore-cache:
+      - restore_cache:
           keys:
             - stack-{{checksum “stack.yaml”}}-{{checksum “project.cabal”}}
       - run: wget https://github.com/commercialhaskell/stack/releases/download/v2.7.5/stack-2.7.5-linux-x86_64.tar.gz -O /tmp/stack.tar.gz
@@ -21,11 +21,11 @@ jobs:
       - run: sudo mv /tmp/stack-download/stack-2.7.5-linux-x86_64/stack /usr/bin/stack
       - run: stack setup
       - run: stack test
-      - save-cache:
+      - save_cache:
           key: stack-{{ checksum “stack.yaml” }}
           paths:
             - “~/.stack”
-      - restore-cache:
+      - restore_cache:
           keys: stack-{{checksum “stack.yaml”}}-{{checksum “project.cabal”}}
           paths:
             - “.stack-work”
@@ -33,4 +33,4 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - stack-test
+      - stack_build_and_test
