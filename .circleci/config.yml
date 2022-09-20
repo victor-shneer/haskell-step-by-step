@@ -10,10 +10,10 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - stack-{{ checksum "stack.yaml" }}
+            - stack-{{ checksum "haskell-step-by-step.cabal" }}
       - restore_cache:
           keys:
-            - stack-{{checksum "stack.yaml"}}-{{checksum "project.cabal"}}
+            - stack-{{ checksum "haskell-step-by-step.cabal" }}
       - run: wget https://github.com/commercialhaskell/stack/releases/download/v2.7.5/stack-2.7.5-linux-x86_64.tar.gz -O /tmp/stack.tar.gz
       - run: sudo mkdir /tmp/stack-download
       - run: sudo tar -xzf /tmp/stack.tar.gz -C /tmp/stack-download
@@ -22,11 +22,11 @@ jobs:
       - run: stack setup
       - run: stack test
       - save_cache:
-          key: stack-{{ checksum "stack.yaml" }}
+          key: stack-{{ checksum "haskell-step-by-step.cabal" }}
           paths:
             - "~/.stack"
       - restore_cache:
-          keys: stack-{{checksum "stack.yaml"}}-{{checksum "project.cabal"}}
+          keys: stack-{{ checksum "haskell-step-by-step.cabal" }}
           paths:
             - ".stack-work"
 
