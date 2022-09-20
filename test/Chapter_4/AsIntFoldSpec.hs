@@ -9,6 +9,3 @@ spec =
     context "with \"-3\"" $
       it "should be -3" $
         asIntFold "-3" `shouldBe` (-3)
-
-main :: IO ()
-main = hspec spec

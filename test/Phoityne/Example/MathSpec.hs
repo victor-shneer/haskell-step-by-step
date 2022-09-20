@@ -16,6 +16,3 @@ spec =
     context "with [1..1]" $
       it "should be 0" $
         sumG 1 1 `shouldBe` 0
-
-main :: IO ()
-main = hspec spec

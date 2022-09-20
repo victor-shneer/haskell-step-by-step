@@ -25,6 +25,3 @@ spec =
     context ("with " ++ show badReservation2) $
       it ("should be " ++ badReservation2Outcome) $
         show (validateReservation badReservation2) `shouldBe` badReservation2Outcome
-
-main :: IO ()
-main = hspec spec

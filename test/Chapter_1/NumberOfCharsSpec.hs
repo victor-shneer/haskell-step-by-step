@@ -9,6 +9,3 @@ spec =
     context "with \"123\"" $
       it "should be 3\n" $
         charCount "123" `shouldBe` "3\n"
-
-main :: IO ()
-main = hspec spec
