@@ -45,7 +45,11 @@ library
       Chapter_4.PrintFirstWordExercise
       Chapter_4.SuffixTree
       Chapter_4.TransposeTextExercise
-      Lib
+      JSONLib.Prettify
+      JSONLib.PrettyJSON
+      JSONLib.PrettyStub
+      JSONLib.PutJson
+      JSONLib.SimpleJSON
       Phoityne.Example.Math
   other-modules:
       Paths_haskell_step_by_step

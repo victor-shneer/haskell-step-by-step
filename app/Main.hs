@@ -1,6 +1,5 @@
 module Main (main) where
-
-import Lib
+import JSONLib.SimpleJSON (JValue(JObject, JNumber, JBool))
 
 main :: IO ()
-main = someFunc
+main = print (JObject [("foo", JNumber 1), ("bar", JBool False)])
